@@ -1,0 +1,338 @@
+body
+{
+	background-color: #F2F2F2;
+	color: rgb(0, 0, 0);
+	
+}
+
+header
+{
+	background-color: #6E6E6E;
+	text-align: center;
+	color: white;
+	padding: 2px;
+}
+
+footer
+{
+	background-color: #F2F2F2;
+	text-align: center;
+	color: #6E6E6E;
+	padding: 4px;
+	font:  oblique 70% cursive;
+	text-decoration: none;
+}
+
+/*Clase div1  (Las clases en CSS se nombran con un punto al comienzo)*/
+
+div.contenedor
+{
+	position: relative;
+	top: 0;
+	max-width: 900px;
+	margin: auto;
+	background-color: white;
+	height: 700px;
+	
+}
+
+/* DESDE AQUI, HASTA A.ACTIVE ES PARA DEFINIR LAS CLASES PARA LA BARRA DE NAVEGACIÓN*/
+
+			div.header
+			{
+				margin:auto;
+				width:700px;
+				font-family:Arial, Helvetica, sans-serif;
+				padding-bottom: 2.5em;
+			}
+
+			ul, ol 
+			{
+				list-style:none;
+			}
+			
+			.nav > li 
+			{
+				float:left;
+			}
+			
+			.nav li a 
+			{
+				background-color:#F2F2F2;
+				color:#6E6E6E;
+				text-decoration:none;
+				padding:5px;
+				display:block;
+				border-left: 1.5px ridge #6E6E6E;
+			}
+			
+			.nav li a:hover 
+			{
+				background-color:#424242;
+				color: white;
+			}
+			
+			.nav li ul 
+			{
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul 
+			{
+				display:block;
+			}
+			
+			.nav li ul li 
+			{
+				position:relative;
+			}
+			
+			.nav li ul li ul 
+			{
+				right:-140px;
+				top:0px;
+			}
+			
+			.nav a.active
+			{
+				color: white;
+				background-color: #DF0101;	
+			}
+
+/*-----------------------------------------FIN DE LAS NAVIGATION BAR-------------------------------*/
+
+.div1
+{
+	background-color: #F8ECE0;
+	color: #0040FF;
+	text-align: center;
+	max-width: 20%;
+	margin: auto;
+	border: 1px solid black;
+	
+}
+
+/* ---------------------- DIV PARA LA MARQUESINA DE IMAGENES DE INDEX -----------------------*/
+
+div.marquesina
+{
+	width: 900px;
+	height: 315px;
+	position: relative;
+	top: 5px;
+	-webkit-animation: marquesina 40s infinite; 
+	-moz-animation: marquesina 40s infinite; 
+	animation: marquesina 40s infinite; 
+	margin: auto;
+	
+}
+
+			/*------webkit para navegadores SAFARI*/
+@-webkit-keyframes marquesina{
+	0% {background-image: url("imagenes/1.jpg"); }
+	50% {background-image: url("imagenes/2.jpg"); }
+	100% {background-image: url("imagenes/3.jpg"); }
+}
+				/*generico*/
+@keyframes marquesina{
+	0% {background-image: url("imagenes/1.jpg"); }
+	50% {background-image: url("imagenes/2.jpg"); }
+	100% {background-image: url("imagenes/3.jpg"); }
+}
+
+/*------DIV BOTOM INDEX contenedor y sus divs internost-----*/
+div.bottom_index
+{
+	position: relative;
+	bottom: 0;
+	padding: 2px;
+	width: 896px;
+	height: 305px;
+	background-color: white;
+	margin: auto;
+}
+
+div.bottom_index1
+{
+	margin: auto;
+	float:left;
+	width: 20%;
+	height: 80%;
+	border-right: 1px dotted #F2F2F2;
+	overflow:auto;
+	background-color: white;
+	padding-left: 2em;
+}
+
+div.bottom_index2
+{
+	margin: auto;
+	float: left;
+	width: 20%;
+	height: 80%;
+	border-right: 1px dotted #F2F2F2;
+	overflow:auto;
+	background-color: white;
+	padding-left: 2em;
+}
+
+div.bottom_index3
+{
+	margin: auto;
+	float: left;
+	width: 20%;
+	height: 80%;
+	border-right: 1px dotted #F2F2F2;
+	overflow:auto;
+	background-color: white;
+	padding-left: 2em;
+}
+
+div.bottom_index4
+{
+	margin: auto;
+	float: left;
+	width: 20%;
+	height: 80%;
+	overflow:auto;
+	background-color: white;
+	text-align: left;
+	padding-left: 2em;
+}
+
+.bottom_index > ul
+{
+	display: initial;
+}
+
+.bottom_index1 > a
+{
+	float: right;
+	text-decoration: none;
+	background: #DF0101;
+	border-radius: 4px;
+	width: auto;
+	height: auto;
+	padding: 6px;
+	color: white;
+}
+
+.bottom_index2 > a
+{
+	float: right;
+	text-decoration: none;
+	background: #DF0101;
+	border-radius: 4px;
+	width: auto;
+	height: auto;
+	padding: 6px;
+	color: white;
+}
+
+.bottom_index3 > a
+{
+	float: right;
+	text-decoration: none;
+	background: #DF0101;
+	border-radius: 4px;
+	width: auto;
+	height: auto;
+	padding: 6px;
+	color: white;
+}
+
+.bottom_index4 > p a
+{
+	text-decoration: none;
+	color: black;
+	border-bottom: 2px dotted #F2F2F2; 
+
+}
+
+/*--------------------------------------------------------------------*/
+table
+{
+	background-color: #F2F2F2;
+	color: #424242;
+	text-align: center;
+	width: 300px;
+	height: 100px;
+	margin: auto;
+
+}
+
+th
+{
+	border-bottom: 1px ridge black;	
+}
+
+td
+{	
+	border: 0px ridge black;
+	text-align: right;
+}
+
+div.tabla
+{
+	max-width: 400px;
+	margin: auto;
+	background-color: white;
+	height: 200px;
+}
+
+.div_top
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 4px;
+
+}
+
+.div_back
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 4px;	
+}
+
+.div_menu
+{
+	position: relative;
+	left: 0;
+	margin-right: 80%;
+	margin-top: 40px;
+}
+
+.form_login
+{
+	position: relative;
+	top: 3em;
+	margin: auto;
+	width: 10em;
+	padding: 2em;
+	height: 12em;
+	border: 2px solid #6E6E6E;
+	border-radius: 4px;
+}
+
+p.parrafo
+{
+	color: #6E6E6E;
+	
+}
+
+input.log
+{
+	float: left;
+	text-decoration: none;
+	background: #DF0101;
+	border-radius: 4px;
+	width: auto;
+	height: auto;
+	padding: 6px;
+	color: white;
+}
